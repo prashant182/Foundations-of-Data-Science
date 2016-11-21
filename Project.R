@@ -1,4 +1,4 @@
-data<-read.csv("E:/NYU/1/Foundation of Data Science/Projects/Foundations-of-Data-Science/USAdata_Original.csv",stringsAsFactors = FALSE,skipNul = TRUE)
+data<-read.csv("D:/Foundation of data Science/project/USAdata1.csv",stringsAsFactors = FALSE,skipNul = TRUE)
 data[,"region"] <- NA
 data$X<-NULL
 data$X.1<-NULL
@@ -12,7 +12,7 @@ South<-data[data$region==3,]
 West<-data[data$region==4,]
 
 correlation<-cor(data[, c(19:26)],use="complete")
-
+correlation
 
 
 
