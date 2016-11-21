@@ -6,6 +6,8 @@ library(plyr)
 
 Northeast
 
+abc
+
 
 NE.states<-ddply(Northeast,"CHSI_State_Name",numcolwise(sum))
 NE.states$State_FIPS_Code<-NULL
